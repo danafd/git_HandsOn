@@ -32,4 +32,4 @@ if args.motif:
   if re.match(args.motif, args.seq):
     print("FOUND it! YESS")
   else:
-    print("NOT FOUND")
+    print("NOT FOUND! Oh no!!")
