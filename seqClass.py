@@ -13,7 +13,7 @@ if len(sys.argv) == 1:
     sys.exit(1)
 
 args = parser.parse_args()
-
+#tells you whether the sequence you input is an RNA, DNA, or neither. 
 args.seq = args.seq.upper()
 if re.search('^[ACGTU]+$', args.seq):
     if re.search('T', args.seq):
@@ -25,7 +25,7 @@ if re.search('^[ACGTU]+$', args.seq):
 else:
     print ('The sequence is not DNA nor RNA')
 
-
+#searches for a motif in your sequence
 if args.motif:
   args.motif = args.motif.upper()
   print(f'Motif search enabled: I am looking for motif "{args.motif}" in sequence "{args.seq}"... ', end = '')
