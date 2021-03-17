@@ -16,7 +16,7 @@ if len(sys.argv) == 1:
 args = parser.parse_args()
 
 
-dict={"A":0, "C":0, "T":0, "G":0}
+dict={"A":0, "C":0, "T":0, "G":0, "U":0}
 for i, args.base in enumerate(args.seq):
   dict[args.base]+=1
 
