@@ -21,4 +21,4 @@ for i, args.base in enumerate(args.seq):
   dict[args.base]+=1
 
 if args.base:
-  print(dict[args.base]/len(args.seq)*100)
+  print(dict[args.base]/len(args.seq)*100, "%")
