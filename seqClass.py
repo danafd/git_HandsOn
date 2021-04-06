@@ -31,7 +31,7 @@ else:
 if args.motif:
   args.motif = args.motif.upper()
   print(f'Motif search enabled: I am looking for motif "{args.motif}" in sequence "{args.seq}"... ', end = '')
-  if re.match(args.motif, args.seq):
-    print("FOUND! oh yeah")
+  if re.search(args.motif, args.seq):
+    print("FOUND IT!")
   else:
-    print("NOT FOUND! Oh no!!")
+    print("COULD NOT FIND IT!")
